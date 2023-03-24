@@ -37,3 +37,15 @@ def inicioPrograma():
                 TuEleccion = int(input("Numero: "))
             else:
                 print("Ganastes")
+
+def main():
+    end = False
+    while end == False:
+        Interfaz()
+        Variable = int(input("(0 O 1): "))
+        if Variable == 0:
+            end = True
+        elif Variable == 1:
+            inicioPrograma()
+
+main()
