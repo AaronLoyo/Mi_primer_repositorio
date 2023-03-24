@@ -1,3 +1,5 @@
+import random
+
 def Interfaz():
     print("""Bienvenido querido usuario, aqui tiene las opciones
     0): Salir del programa
@@ -19,4 +21,19 @@ def inicioPrograma():
         4): Roblox
         5): Adivina el numero """)
         Eleccion2 = input("Eleccion(5 es la unica que funciona): ")
-        
+        if Eleccion2 < 5:
+            print("No se puede jugar eso en la consola de comandos")
+        elif Eleccion2 == 5:
+            print("!!Perfecto!!")
+            print("Adivina el numero entre 1 y 100")
+            NumeroPC = random.randint(1,100)
+            TuEleccion = int(input("Numero:"))
+            while TuEleccion != NumeroPC:
+                print("Elije otro")
+                if TuEleccion > NumeroPC:
+                    print("Tu numero es mayor")
+                else:
+                    print("Tu numero es menor")
+                TuEleccion = int(input("Numero: "))
+            else:
+                print("Ganastes")
