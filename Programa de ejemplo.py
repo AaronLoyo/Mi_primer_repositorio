@@ -21,7 +21,7 @@ def inicioPrograma():
         4): Roblox
         5): Adivina el numero """)
         Eleccion2 = input("Eleccion(5 es la unica que funciona): ")
-        if Eleccion2 != 5:
+        if Eleccion2 is not 5:
             print("No se puede jugar eso en la consola de comandos")
         elif Eleccion2 == 5:
             print("!!Perfecto!!")
@@ -47,5 +47,5 @@ def main():
             end = True
         elif Variable == 1:
             inicioPrograma()
-asndhkjsahdkjahdkjwhkjqdhjwkbdjkawhduikqwdghki
+
 main()
